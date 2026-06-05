@@ -579,7 +579,7 @@ Return ONLY a valid JSON object, no markdown, no explanation. Schema:
 
 Make the 8 picks diverse: mix of categories, platforms, confidence levels, and edges. Rank by confidence descending. Make them feel real and grounded in current world events.`;
 
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
+    const response = await fetch('/api/analyze', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
