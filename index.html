@@ -522,7 +522,7 @@ async function fetchPicks() {
   wrap.innerHTML = `
     <div class="loading-wrap">
       <div class="loading-spinner"></div>
-      <div class="loading-text">Claude is analyzing markets…</div>
+      <div class="loading-text">Scanning prediction markets…</div>
       <div class="loading-steps">
         <div class="loading-step" id="step1">Fetching Polymarket top-trader positions</div>
         <div class="loading-step" id="step2">Pulling Kalshi odds &amp; volume</div>
@@ -616,7 +616,7 @@ Make the 8 picks diverse: mix of categories, platforms, confidence levels, and e
     renderPicks(allPicks);
 
     document.getElementById('timestamp').style.display = 'block';
-    document.getElementById('timestamp').textContent = `Last analyzed ${dateStr} at ${timeStr} · Powered by Claude`;
+    document.getElementById('timestamp').textContent = `Last analyzed ${dateStr} at ${timeStr}`;
 
   } catch(err) {
     clearInterval(stepTimer);
